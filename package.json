@@ -1,0 +1,40 @@
+{
+    "title": "Lucie",
+    "name": "lucie",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "yarn clean && yarn build:pug && yarn build:scss && yarn build:assets",
+        "build:assets": "node scripts/build-assets.js",
+        "build:pug": "node scripts/build-pug.js",
+        "build:scss": "node scripts/build-scss.js",
+        "clean": "node scripts/clean.js",
+        "start": "yarn build && node scripts/start.js",
+        "start:debug": "yarn build && node scripts/start-debug.js"
+    },
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://lucie.shahzoab.com/",
+    "license": "MIT",
+    "author": "Shahzoab Khan",
+    "dependencies": {
+        "bootstrap": "5.2.3"
+    },
+    "devDependencies": {
+        "autoprefixer": "10.4.14",
+        "browser-sync": "2.29.1",
+        "chokidar": "3.5.3",
+        "concurrently": "6.3.0",
+        "postcss": "8.4.21",
+        "prettier": "2.8.6",
+        "pug": "3.0.2",
+        "sass": "1.60.0",
+        "shelljs": "0.8.5",
+        "upath": "2.0.1"
+    }
+}
